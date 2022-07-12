@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>VIRTUAL ASSISTANT</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>>
+<body>
+<header>
+    <div class="main">
+        <ul>
+            <li class="active">
+                <a href="#">Home</a>
+                
+            </li>
+        </ul>
+
+    </div>
+    <dev class="title">
+        <h1>VIRTUAL ASSISTANT</h1>
+    </dev>
+</header>
+  <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "7539c0bf-a8d0-4da2-80a7-bc1b8cd25c12", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "c78eb664-4057-4709-85c2-74853dcc9777", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+  </body>
+</html>
