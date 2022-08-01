@@ -4,7 +4,7 @@
     font-family: Century Gothic;
 }
 header{
-    background-image:background_img.png;
+    background-image:url("background_img.png");
     background-size: cover;
     background-image: center;
 
